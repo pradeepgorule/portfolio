@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+body {
+ height: 100%;
+ margin: 0;
+ padding: 0;
+ background: #1e272e;
+ font-family: 'Montserrat', sans-serif;
+}
+ 
+.sidebar {
+    background: rgba(0,0,0,1);
+    height: 100vh;
+    
+    
+    color: white;
+   
+    position: fixed;
+}
+.p{
+    color: lime; 
+    font-family: "Courier";
+    font-size: 40px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 4s steps(60, end); 
+  }
+  
+ .p:nth-child(2){
+    animation: type2 8s steps(60, end);
+  }
+  
+  .p a{
+    color: lime;
+    text-decoration: none;
+  }
+  
+  span{
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
+  
+.sidebar  a
+{
+	color: white;
+	display: block;
+}
+.sidebar div{
+	text-align: center;
+	font-size: 40px;
+	 
+	transition: 0.5s;
+	padding: 30px;
+	cursor: pointer;
+}
+.sidebar div:hover
+{
+	background: #3498db;
+}
+.data
+{
+	position: absolute;
+	left: 20%;
+	color: white;
+	width:60%;
+	line-height: 2em;
+	 
+}
+.mail{
+    color: white;
+}
+.mail:hover {
+    color: white;
+}
+section{
+    color: white;
+    height: 100vh;
+
+} 
+.duration{
+    float: right;
+    position: relative;
+  }
+.cmp-img{
+    border-radius: 50%;
+    width: 60px;
+    position: relative;
+    /* right: 0; */
+    left: 90%;
+    top: 50px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  overflow: hidden;
+  
+  
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #1e272e;
+    border-radius: 20px;
+    
+  
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white; 
+     border-radius: 20px;
+  
+  }
+  #document{
+  
+   
+  scrollbar-track-color: red; 
+   
+  }
+
+  
+.meter .meter_percentage{
+    width: 100%;
+    background: black;
+    box-shadow: 1px 1px 20px 0px #08d3fb;
+    transition: 0.5s;
+   
+}
+.meter:hover >.meter_percentage {
+transform: scale(1.05);
+box-shadow: none;
+}
+.meter .meter_percentage .limit-html{
+      background: #08d3fb;
+    padding: 6px;
+    display: block;
+    width: 90%;
+}
+.meter .meter_percentage .limit-css{
+      background: #08d3fb;
+    padding: 6px;
+    display: block;
+    width: 85%;
+}
+.meter .meter_percentage .limit-js{
+      background: #08d3fb;
+    padding: 6px;
+    display: block;
+    width: 75%;
+}
+
+ .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: #e91e63;
+  font-weight: 900;
+  font-family: "Audiowide", cursive;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+float: right;
+  z-index: 1;
+}
+ .meter:hover .tooltiptext {
+  visibility: visible;
+  
+
+}
+.about-details{
+    letter-spacing: 2px;
+}
+.media{
+    display: none;
+}
+.dp-img{
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid white;
+    right: 100px;
+    
+}
+.bio{
+    position: relative;
+    left: 81%;
+    top: 240px;
+    font-size: 25px;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+       
+    }
+    .media{
+        display: block;
+    }
+    section{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+  }
