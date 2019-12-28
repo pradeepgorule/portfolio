@@ -64,10 +64,10 @@ body {
 }
 .data
 {
-	position: absolute;
-	left: 20%;
+	position: relative;
+	left: 10%;
 	color: white;
-	width:60%;
+	width:80%;
 	line-height: 2em;
 	 
 }
@@ -178,17 +178,46 @@ float: right;
     display: none;
 }
 .dp-img{
-    position: absolute;
+    position: relative;
     border-radius: 50%;
     border: 2px solid white;
-    right: 100px;
+    
     
 }
 .bio{
-    position: relative;
-    left: 81%;
-    top: 240px;
+    position: absolute;
+     right: 0;
+      top:0;
     font-size: 25px;
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    transition: 2s;
+} 
+.bio li{
+  list-style: none;
+  float: left;
+  margin: 10 10 10 30px;    
+  display: none;
+ transition: 2s;
+}
+.bio:hover>li{
+  display: block;
+  
+}
+.bio li a{
+  color: black;
+}
+.about-details li {
+  margin: 15px;
+}
+.home {
+  padding: 20px;
+  margin: 20px;
+  font-size: 20px;
+  letter-spacing: 3px;
 }
 @media only screen and (max-width: 600px) {
     body {
